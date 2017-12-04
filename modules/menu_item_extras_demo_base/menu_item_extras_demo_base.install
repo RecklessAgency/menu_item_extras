@@ -2,16 +2,16 @@
 
 /**
  * @file
- * Installation hooks for mie_demo_base module.
+ * Installation hooks for menu_item_extras_demo_base module.
  */
 
 use Drupal\Core\Link;
-use Drupal\mie_demo_base\Utility\MieDemoBaseUtility;
+use Drupal\menu_item_extras_demo_base\Utility\MieDemoBaseUtility;
 
 /**
  * Implements hook_install().
  */
-function mie_demo_base_install() {
+function menu_item_extras_demo_base_install() {
   // Create test image files.
   $sample_one = MieDemoBaseUtility::createFile('sample-one.png');
   $sample_one_child = MieDemoBaseUtility::createFile('sample-one-child.jpg');

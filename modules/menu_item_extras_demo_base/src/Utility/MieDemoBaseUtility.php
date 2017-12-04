@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\mie_demo_base\Utility;
+namespace Drupal\menu_item_extras_demo_base\Utility;
 
 use Drupal\file\Entity\File;
 use Drupal\Core\StreamWrapper\PublicStream;
@@ -8,7 +8,7 @@ use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Drupal\taxonomy\Entity\Term;
 
 /**
- * Utility functions specific to mie_demo_base.
+ * Utility functions specific to menu_item_extras_demo_base.
  */
 class MieDemoBaseUtility {
 
@@ -23,8 +23,8 @@ class MieDemoBaseUtility {
    * @return \Drupal\file\Entity\File
    *   Drupal File entity.
    */
-  public static function createFile($file_name, $module_path = 'mie_demo_base') {
-    file_unmanaged_copy(drupal_get_path('module', 'mie_demo_base') . '/files/' . $file_name, PublicStream::basePath());
+  public static function createFile($file_name, $module_path = 'menu_item_extras_demo_base') {
+    file_unmanaged_copy(drupal_get_path('module', 'menu_item_extras_demo_base') . '/files/' . $file_name, PublicStream::basePath());
     $demo_image_uri = 'public://' . $file_name;
     /** @var \Drupal\file\FileInterface $file */
     $demo_image = File::create(['uri' => $demo_image_uri, 'status' => FILE_STATUS_PERMANENT]);

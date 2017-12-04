@@ -1,5 +1,5 @@
 name: Menu Item Extras Demo Base
-description: "Provide a base demo example of Mega Menu"
+description: "Provide a base demo example how to build menus with fields."
 type: module
 package: Menu
 hidden: false
