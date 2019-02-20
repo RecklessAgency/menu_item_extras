@@ -1,5 +1,5 @@
 {
-  "name": "menu_item_extras_reckless",
+  "name": "reckless/menu_item_extras_reckless",
   "type": "drupal-module",
   "description": "Provide an additional custom fields which can be used on Menu link",
   "keywords": ["Drupal", "Mega Menu"],
