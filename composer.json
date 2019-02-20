@@ -1,5 +1,5 @@
 {
-  "name": "drupal/menu_item_extras",
+  "name": "drupal/menu_item_extras_reckless",
   "type": "drupal-module",
   "description": "Provide an additional custom fields which can be used on Menu link",
   "keywords": ["Drupal", "Mega Menu"],
@@ -24,6 +24,11 @@
     {
       "name": "Mykhailo Gurei",
       "homepage": "https://www.drupal.org/u/ozin",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Reckless",
+      "homepage": "https://github.com/RecklessAgency",
       "role": "Maintainer"
     }
   ],
