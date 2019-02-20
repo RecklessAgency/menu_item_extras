@@ -2,7 +2,7 @@
 
 namespace Drupal\Tests\menu_item_extras\Unit;
 
-use Drupal\menu_item_extras\Utility\Utility;
+use Drupal\menu_item_extras_reckless\Utility\Utility;
 use Drupal\Tests\UnitTestCase;
 
 /**

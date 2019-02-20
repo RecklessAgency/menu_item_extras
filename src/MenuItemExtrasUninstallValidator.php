@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras;
+namespace Drupal\menu_item_extras_reckless;
 
 use Drupal\Core\Database\Connection;
 use Drupal\Core\Extension\ModuleUninstallValidatorInterface;

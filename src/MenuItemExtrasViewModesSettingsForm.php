@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras;
+namespace Drupal\menu_item_extras_reckless;
 
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Core\Cache\CacheableMetadata;
@@ -14,7 +14,7 @@ use Drupal\Core\Menu\MenuTreeParameters;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Utility\LinkGeneratorInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\menu_item_extras\Service\MenuLinkTreeHandlerInterface;
+use Drupal\menu_item_extras_reckless\Service\MenuLinkTreeHandlerInterface;
 use Drupal\Core\Entity\EntityDisplayRepositoryInterface;
 
 /**
@@ -46,7 +46,7 @@ class MenuItemExtrasViewModesSettingsForm extends EntityForm {
   /**
    * The custom menu link tree service.
    *
-   * @var \Drupal\menu_item_extras\Service\MenuLinkTreeHandlerInterface
+   * @var \Drupal\menu_item_extras_reckless\Service\MenuLinkTreeHandlerInterface
    */
   protected $menuLinkTreeHandler;
 
@@ -73,7 +73,7 @@ class MenuItemExtrasViewModesSettingsForm extends EntityForm {
    *   The menu tree service.
    * @param \Drupal\Core\Utility\LinkGeneratorInterface $link_generator
    *   The link generator.
-   * @param \Drupal\menu_item_extras\Service\MenuLinkTreeHandlerInterface $menu_link_tree_handler
+   * @param \Drupal\menu_item_extras_reckless\Service\MenuLinkTreeHandlerInterface $menu_link_tree_handler
    *   The custom menu link tree service.
    * @param \Drupal\Core\Entity\EntityDisplayRepositoryInterface $entityDisplayRepository
    *   The entity display repository.

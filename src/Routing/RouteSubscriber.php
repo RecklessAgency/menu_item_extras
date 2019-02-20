@@ -1,15 +1,15 @@
 <?php
 
-namespace Drupal\menu_item_extras\Routing;
+namespace Drupal\menu_item_extras_reckless\Routing;
 
 use Drupal\Core\Routing\RouteSubscriberBase;
-use Drupal\menu_item_extras\Controller\MenuController;
+use Drupal\menu_item_extras_reckless\Controller\MenuController;
 use Symfony\Component\Routing\RouteCollection;
 
 /**
  * Class RouteSubscriber.
  *
- * @package Drupal\menu_item_extras\Routing
+ * @package Drupal\menu_item_extras_reckless\Routing
  */
 class RouteSubscriber extends RouteSubscriberBase {
 

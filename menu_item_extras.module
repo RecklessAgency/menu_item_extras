@@ -12,8 +12,8 @@ use Drupal\Core\Render\Element;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
-use Drupal\menu_item_extras\Entity\MenuItemExtrasMenuLinkContent;
-use Drupal\menu_item_extras\Utility\Utility;
+use Drupal\menu_item_extras_reckless\Entity\MenuItemExtrasMenuLinkContent;
+use Drupal\menu_item_extras_reckless\Utility\Utility;
 use Drupal\Core\Url;
 
 /**
@@ -51,7 +51,7 @@ function menu_item_extras_entity_type_build(array &$entity_types) {
     $mlc = $entity_types[$content_entity];
     $mlc->setClass(MenuItemExtrasMenuLinkContent::class);
     // Set handler for views.
-    $mlc->setHandlerClass('views_data', 'Drupal\menu_item_extras\MenuLinkContentViewsData');
+    $mlc->setHandlerClass('views_data', 'Drupal\menu_item_extras_reckless\MenuLinkContentViewsData');
     $mlc->set('bundle_entity_type', 'menu');
     $mlc->set('field_ui_base_route', 'entity.menu.edit_form');
     // Set entity to be a bundle entity type for previous entity.
@@ -59,10 +59,10 @@ function menu_item_extras_entity_type_build(array &$entity_types) {
     $menu = $entity_types['menu'];
     $menu->set('bundle_of', $content_entity);
     $entity_types['menu']
-      ->setFormClass('clear', 'Drupal\menu_item_extras\Form\ConfirmClearMenuForm')
+      ->setFormClass('clear', 'Drupal\menu_item_extras_reckless\Form\ConfirmClearMenuForm')
       ->setLinkTemplate('clear', '/admin/structure/menu/manage/{menu}');
     $entity_types['menu']
-      ->setFormClass('view_modes_settings', 'Drupal\menu_item_extras\MenuItemExtrasViewModesSettingsForm')
+      ->setFormClass('view_modes_settings', 'Drupal\menu_item_extras_reckless\MenuItemExtrasViewModesSettingsForm')
       ->setLinkTemplate('view-modes-settings', '/admin/structure/menu/manage/{menu}/view_modes_settings');
   }
 }
@@ -123,7 +123,7 @@ function menu_item_extras_entity_base_field_info_alter(&$fields, EntityTypeInter
 function menu_item_extras_menu_link_content_presave(EntityInterface $entity) {
   /** @var \Drupal\menu_link_content\MenuLinkContentInterface $entity */
   if (!empty($entity->original) && ($entity->original->getMenuName() !== $entity->getMenuName())) {
-    /** @var \Drupal\menu_item_extras\Service\MenuLinkContentServiceInterface $menu_links_helper */
+    /** @var \Drupal\menu_item_extras_reckless\Service\MenuLinkContentServiceInterface $menu_links_helper */
     $menu_links_helper = \Drupal::service('menu_item_extras.menu_link_content_helper');
     $menu_links_helper->cleanupFields($entity);
     $entity->set('bundle', $entity->getMenuName());
@@ -208,7 +208,7 @@ function menu_item_extras_form_menu_link_content_form_alter(array &$form, FormSt
  * and makes uninstalling easy.
  *
  * @see menu_item_extras_entity_base_field_info()
- * @see Drupal\menu_item_extras\Form\ConfirmClearMenuForm
+ * @see Drupal\menu_item_extras_reckless\Form\ConfirmClearMenuForm
  */
 function menu_item_extras_form_menu_edit_form_alter(array &$form, FormStateInterface $form_state) {
   $menu = $form_state->getFormObject()->getEntity()->id();
@@ -244,7 +244,7 @@ function menu_item_extras_form_node_form_alter(array &$form, FormStateInterface 
  * Implements hook_menu_insert().
  */
 function menu_item_extras_menu_insert(EntityInterface $entity) {
-  /** @var \Drupal\menu_item_extras\Service\MenuLinkContentService $mlc_helper */
+  /** @var \Drupal\menu_item_extras_reckless\Service\MenuLinkContentService $mlc_helper */
   $mlc_helper = \Drupal::service('menu_item_extras.menu_link_content_helper');
   $mlc_helper->installViewModeField();
   $mlc_helper->updateMenuItemsBundle($entity->id());

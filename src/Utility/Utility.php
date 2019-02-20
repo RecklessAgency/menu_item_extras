@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras\Utility;
+namespace Drupal\menu_item_extras_reckless\Utility;
 
 use Drupal\Component\Utility\Unicode;
 

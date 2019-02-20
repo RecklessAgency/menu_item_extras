@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras\Entity;
+namespace Drupal\menu_item_extras_reckless\Entity;
 
 use Drupal\menu_link_content\MenuLinkContentInterface;
 

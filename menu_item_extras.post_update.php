@@ -19,7 +19,7 @@ function menu_item_extras_post_update_1x_to_2x(&$sandbox) {
     $link_storage = \Drupal::entityTypeManager()
       ->getStorage('menu_link_content');
 
-    /** @var \Drupal\menu_item_extras\Service\UpdateHelper $updater */
+    /** @var \Drupal\menu_item_extras_reckless\Service\UpdateHelper $updater */
     $updater = \Drupal::service('menu_item_extras.update');
 
     $field_storage = $updater->checkBodyFieldStorage(

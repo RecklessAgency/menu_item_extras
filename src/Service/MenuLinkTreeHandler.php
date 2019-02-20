@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras\Service;
+namespace Drupal\menu_item_extras_reckless\Service;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Entity\EntityRepositoryInterface;

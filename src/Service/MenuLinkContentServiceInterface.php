@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras\Service;
+namespace Drupal\menu_item_extras_reckless\Service;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\menu_link_content\MenuLinkContentInterface;
@@ -8,7 +8,7 @@ use Drupal\menu_link_content\MenuLinkContentInterface;
 /**
  * Interface MenuLinkContentHelperInterface.
  *
- * @package Drupal\menu_item_extras\Service
+ * @package Drupal\menu_item_extras_reckless\Service
  */
 interface MenuLinkContentServiceInterface {
 

@@ -2,13 +2,13 @@
 // @codingStandardsIgnoreFile
 
 /**
- * This file was generated via php core/scripts/generate-proxy-class.php 'Drupal\menu_item_extras\MenuItemExtrasUninstallValidator' "modules/sandbox/menu_item_extras/src".
+ * This file was generated via php core/scripts/generate-proxy-class.php 'Drupal\menu_item_extras_reckless\MenuItemExtrasUninstallValidator' "modules/sandbox/menu_item_extras/src".
  */
 
-namespace Drupal\menu_item_extras\ProxyClass {
+namespace Drupal\menu_item_extras_reckless\ProxyClass {
 
     /**
-     * Provides a proxy class for \Drupal\menu_item_extras\MenuItemExtrasUninstallValidator.
+     * Provides a proxy class for \Drupal\menu_item_extras_reckless\MenuItemExtrasUninstallValidator.
      *
      * @see \Drupal\Component\ProxyBuilder
      */
@@ -27,7 +27,7 @@ namespace Drupal\menu_item_extras\ProxyClass {
         /**
          * The real proxied service, after it was lazy loaded.
          *
-         * @var \Drupal\menu_item_extras\MenuItemExtrasUninstallValidator
+         * @var \Drupal\menu_item_extras_reckless\MenuItemExtrasUninstallValidator
          */
         protected $service;
 

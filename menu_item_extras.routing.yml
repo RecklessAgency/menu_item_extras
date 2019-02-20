@@ -14,8 +14,8 @@ entity.menu.view_modes_settings:
     _entity_access: 'menu.update'
 menu_item_extras.clear_all_extra_data:
   path: '/admin/modules/uninstall/extra_data/menu_item_extras'
-  defaults: 
-    _controller: '\Drupal\menu_item_extras\Controller\MenuController::removeExtraData' 
+  defaults:
+    _controller: '\Drupal\menu_item_extras_reckless\Controller\MenuController::removeExtraData'
     _title: 'Remove menu item extra data'
   requirements:
     _permission: 'administer menu'
