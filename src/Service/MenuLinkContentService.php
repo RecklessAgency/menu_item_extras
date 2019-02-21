@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras_reckless\Service;
+namespace Drupal\menu_item_extras\Service;
 
 use Drupal\Core\DependencyInjection\DependencySerializationTrait;
 use Drupal\Core\Entity\ContentEntityInterface;
@@ -18,7 +18,7 @@ use Drupal\menu_link_content\MenuLinkContentInterface;
 /**
  * Class MenuLinkContentHelper.
  *
- * @package Drupal\menu_item_extras_reckless\Service
+ * @package Drupal\menu_item_extras\Service
  */
 class MenuLinkContentService implements MenuLinkContentServiceInterface {
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\menu_item_extras_reckless\Controller;
+namespace Drupal\menu_item_extras\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\system\MenuInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\menu_item_extras_reckless\Service\MenuLinkContentServiceInterface;
+use Drupal\menu_item_extras\Service\MenuLinkContentServiceInterface;
 
 /**
  * Defines a route controller for a form for menu link content entity creation.
@@ -15,14 +15,14 @@ class MenuController extends ControllerBase {
   /**
    * The menu link content service helper.
    *
-   * @var \Drupal\menu_item_extras_reckless\Service\MenuLinkContentServiceInterface
+   * @var \Drupal\menu_item_extras\Service\MenuLinkContentServiceInterface
    */
   protected $menuLinkContentHelper;
 
   /**
-   * Constructs a new \Drupal\menu_item_extras_reckless\Controller\MenuController object.
+   * Constructs a new \Drupal\menu_item_extras\Controller\MenuController object.
    *
-   * @param \Drupal\menu_item_extras_reckless\Service\MenuLinkContentServiceInterface $menuLinkContentHelper
+   * @param \Drupal\menu_item_extras\Service\MenuLinkContentServiceInterface $menuLinkContentHelper
    *   The menu link content service helper.
    */
   public function __construct(MenuLinkContentServiceInterface $menuLinkContentHelper) {

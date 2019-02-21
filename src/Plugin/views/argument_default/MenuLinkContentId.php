@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras_reckless\Plugin\views\argument_default;
+namespace Drupal\menu_item_extras\Plugin\views\argument_default;
 
 use Drupal\Core\Cache\Cache;
 use Drupal\Core\Cache\CacheableDependencyInterface;

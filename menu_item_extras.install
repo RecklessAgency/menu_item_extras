@@ -13,7 +13,7 @@ function menu_item_extras_install() {
   $menus = \Drupal::entityTypeManager()
     ->getStorage('menu')
     ->loadMultiple();
-  /** @var \Drupal\menu_item_extras_reckless\Service\MenuLinkContentService $mlc_helper */
+  /** @var \Drupal\menu_item_extras\Service\MenuLinkContentService $mlc_helper */
   $mlc_helper = \Drupal::service('menu_item_extras.menu_link_content_helper');
   $mlc_helper->installViewModeField();
   if (!empty($menus)) {
@@ -32,7 +32,7 @@ function menu_item_extras_uninstall() {
   $menus = \Drupal::entityTypeManager()
     ->getStorage('menu')
     ->loadMultiple();
-  /** @var \Drupal\menu_item_extras_reckless\Service\MenuLinkContentService $mlc_helper */
+  /** @var \Drupal\menu_item_extras\Service\MenuLinkContentService $mlc_helper */
   $mlc_helper = \Drupal::service('menu_item_extras.menu_link_content_helper');
   if (!empty($menus)) {
     foreach ($menus as $menu_id => $menu) {

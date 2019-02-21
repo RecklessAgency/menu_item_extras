@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras_reckless\Service;
+namespace Drupal\menu_item_extras\Service;
 
 use Drupal\Core\Entity\Entity\EntityFormDisplay;
 use Drupal\Core\Entity\Entity\EntityViewDisplay;
@@ -11,7 +11,7 @@ use Drupal\field\Entity\FieldStorageConfig;
 /**
  * Class MenuLinkContentUpdateHelper.
  *
- * @package Drupal\menu_item_extras_reckless\Service
+ * @package Drupal\menu_item_extras\Service
  */
 class UpdateHelper {
 

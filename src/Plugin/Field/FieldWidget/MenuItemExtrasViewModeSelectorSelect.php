@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\menu_item_extras_reckless\Plugin\Field\FieldWidget;
+namespace Drupal\menu_item_extras\Plugin\Field\FieldWidget;
 
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
@@ -10,7 +10,7 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Entity\EntityDisplayRepositoryInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\menu_item_extras_reckless\Utility\Utility;
+use Drupal\menu_item_extras\Utility\Utility;
 
 /**
  * Base class for the menu item extras view mode widget.

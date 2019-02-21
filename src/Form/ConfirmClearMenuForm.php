@@ -1,12 +1,12 @@
 <?php
 
-namespace Drupal\menu_item_extras_reckless\Form;
+namespace Drupal\menu_item_extras\Form;
 
 use Drupal\Core\Entity\EntityConfirmFormBase;
 use Drupal\Core\Url;
 use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\menu_item_extras_reckless\Service\MenuLinkContentServiceInterface;
+use Drupal\menu_item_extras\Service\MenuLinkContentServiceInterface;
 
 /**
  * Class ConfirmClearMenuForm.
@@ -18,14 +18,14 @@ class ConfirmClearMenuForm extends EntityConfirmFormBase {
   /**
    * The menu link content service helper.
    *
-   * @var \Drupal\menu_item_extras_reckless\Service\MenuLinkContentServiceInterface
+   * @var \Drupal\menu_item_extras\Service\MenuLinkContentServiceInterface
    */
   protected $menuLinkContentHelper;
 
   /**
-   * Constructs a new \Drupal\menu_item_extras_reckless\Form\ConfirmClearMenuForm object.
+   * Constructs a new \Drupal\menu_item_extras\Form\ConfirmClearMenuForm object.
    *
-   * @param \Drupal\menu_item_extras_reckless\Service\MenuLinkContentServiceInterface $menuLinkContentHelper
+   * @param \Drupal\menu_item_extras\Service\MenuLinkContentServiceInterface $menuLinkContentHelper
    *   The menu link content service helper.
    */
   public function __construct(MenuLinkContentServiceInterface $menuLinkContentHelper) {
